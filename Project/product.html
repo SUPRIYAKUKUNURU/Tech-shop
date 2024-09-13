@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Deatails</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        
+        body{
+            background-color: black;
+        }
+        .header{
+            position: sticky;
+            top:0px;
+            padding-top:3px;
+        }
+        h3{
+            color:rgb(180, 195, 203);
+            font-size: 25px;
+        }
+        .sectionA{
+            display:flex;
+            margin-left:900px;
+            margin-top:-60px;
+            padding-right:50px;
+        }
+        i{
+            margin-right:50px;
+            margin-left:50px;
+           }
+        .star-rating{
+            color:red;
+        }
+        .price{
+            position:relative;
+            left:90px;
+            bottom:39px;
+            font-size: 20px;
+        }
+        .price1{
+            font-size:25px;
+        }
+        .button1{
+            position:relative;
+            left:270px;
+            font-size: 20px;
+            bottom:60px;
+
+        }
+        .p1,.p2{
+            color:gray;
+            border:2px solid dimgray;
+            height:45px;
+            width:200px;
+            text-align: left;
+            align-content: center;
+        }
+        .p2{
+            position:relative;
+            left:220px;
+            bottom:65px;
+        }
+        .Ptypes{
+            display:grid;
+            grid-template-columns: repeat(1,1fr);
+            padding:20px;
+        }
+        .banner{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            padding-top:30px;
+        }
+        .product{
+            position:relative;
+            right:250px;
+        }
+        .details{
+            position:relative;
+            right:90px;
+        }
+        .add{
+            color:white;
+            background-color: red;
+            height:50px;
+            width:250px;
+            border-radius:5px;
+        }
+        .add2{
+            font-size: 20px;
+            padding:20px;
+            border-radius: 4px;
+            color:rgb(217, 228, 231);
+        }
+        .add3{
+            font-size: 20px;
+            background-color:black;
+            height: 30px;
+            width:200px;
+            border:2px solid black;
+            color:rgb(217, 228, 231);
+            padding:30px;
+        }
+        .add3:hover{
+            background-color: red;
+            border-radius: 4px;
+            border:none;
+            
+        }
+         .button{
+           position:relative;
+           left:400px;
+        } 
+      .pdetails{
+        display: flex;
+
+      }
+      .home32{
+        position:relative;
+        left:100px;
+        bottom:40px;
+        padding:50px;
+        text-align: right;
+       }
+
+       .home4{
+                display:grid;
+                grid-template-columns: repeat(4,1fr);
+                gap:10px;
+                padding:10px;
+                
+             }
+             .c1,.c2,.c3,.c4{
+            border:1px solid dimgray;
+            width: 350px;
+            height: 550px;
+            border-radius:5px;
+            }
+            .live-image{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            background-color: #24272e;
+            padding-left: 110px;
+            padding-top: 10px;
+            width:240px;
+           }
+           .c1 button{
+            margin-left:50px;
+           }
+           .c2 button{
+            margin-left:150px;
+
+           }
+           .c3 button{
+            margin-left:150px;
+
+           }
+           .c4 button{
+            margin-left:150px;
+
+           }
+           .c1 h4{
+            margin-left:55px;
+            font-size: 30px;
+
+           }
+           .c2 h4{
+            margin-left:150px;
+            font-size: 30px;
+
+           }
+           .c3 h4{
+            margin-left:150px;
+            font-size: 30px;
+
+           }
+           .c4 h4{
+            margin-left:150px;
+            font-size: 30px;
+
+           }
+           .fa-star {
+            color: red;
+            position:relative;
+            /* margin-left:30px; */
+            /* padding-left: 20px; */
+        
+
+        }
+        h2{
+            color:rgb(187, 186, 203);
+        }
+        .home4 p{
+            color:white;
+        }
+        .c1 h2{
+            margin-left:5px;
+
+        }
+        /* .c1 p,h2{
+            margin-left:10px;
+
+        } */
+        .c2 p,h2{
+            margin-left:100px;
+           }
+        .c3 p,h2{
+            margin-left:100px;
+           }
+        .c4 p,h2{
+            margin-left:100px;
+           }
+           .checked1,.checked2,.checked3{
+            position:relative;
+            margin-left: 100px;
+           }
+           .home4 hr{
+            position: relative;
+            margin-left: 100px;
+            width:330px;
+           }
+           .home4 .hr1{
+            position:realtive;
+            bottom:-1px;
+            right:87px;
+           }
+           .adv{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+           }
+           .subscribe{
+            margin-top:25px;
+            height: 65px;
+            width:180px;
+            background-color:red;
+            color:white;
+            font-size:25px;
+            display: block;
+            border-radius:5px;
+        
+            
+        }
+        
+       
+        .footer{
+            color:white;
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .footer h4{
+            font-size:25px;
+            margin-left :5px;
+        }
+        li{
+            font-size: 25px;
+            color:dimgrey
+        }
+        .home h4{
+            font-size: 25px;
+            margin-left:5px;
+        }
+
+        input{
+        
+        background-color: black;
+        height: 45px;
+        width:400px;
+        font-size:25px;
+    }
+
+
+         .FSB{
+        
+            display:grid;
+            grid-template-columns: repeat(2,1fr); 
+            /* padding:10px; */
+        
+        }
+        .icons{
+            position: relative;
+            left: 301px;
+            bottom:-10px;
+        }
+        .jbl{
+            position: relative;
+            left: -101px;
+            color: rgb(142, 164, 195);
+        }
+        .spn1{
+            position: relative;
+            top: 30px;
+            right: 20px;
+            visibility: hidden;
+            color:dimgray;
+            font-size:15px;
+            border:2px solid dimgray;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:5px;
+        
+       }
+       #search:hover .spn1{
+            visibility: visible;
+       }
+       .spn2{
+            position: relative;
+            top: 30px;
+            right: 20px;
+            visibility: hidden;
+            color:dimgray;
+            font-size:15px;
+            border:2px solid dimgray;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:5px;
+        
+       }
+
+       #cart:hover .spn2{
+            visibility: visible;
+       }
+       .spn3{
+            /* border: 2px solid dimgray; */
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            position: relative;
+            top:35px;
+            right: 50px;
+            /* width: 200px;
+            height: 200px; */
+       }
+       .btn{
+            height:30px;
+            width:200px;
+            background-color: black;
+            color:dimgray;
+            border:2px solid dimgray;
+            border-radius: 2px;
+            font-size:15px;
+            text-align: left;
+
+       }
+       #profile{
+           visibility:hidden
+       }
+      #prf:hover .spn3{
+    visibility: visible;
+
+      }
+        #profile{
+            border: 2px solid dimgray;
+        } 
+        .tech:hover {
+            background-color:red;
+            width: 120px;
+        }  
+        
+        
+     </style> 
+</head>
+<body>
+    <header>
+        <section class="header1">
+      <section>
+          <h3 class="tech" style="color:rgb(186, 184, 199) padding-left=80px;">Tech-Shop</h3>
+      </section>
+     
+      <section class="sectionA">
+        <i class="fa fa-search" id="search" style="font-size:25px;color:white;" ><span class="spn1" >search</span></i>
+        <i class="fa fa-shopping-cart" id="cart"style="font-size:25px;color:white;"><span class="spn2">cart</span></i>
+      <i class="fa-solid fa-user"id="prf" style="color:white;font-size:20px;"><div id="profile"class="spn3">
+        <h2 style="position:relative;left:-100px;">Hello !</h2>
+        <h3 style="color:dimgray;font-size:10px;">Access account and manage orders</h3>
+        <a href="./Sign up.html" target="_blank"><button class="btn" >Login/Signup </button></a>
+        <hr/>
+       <h3 style="color:dimgray;font-size:15px;">Please Login</h3>
+        <p></p>
+      </div>    
+      </i>
+    
+
+      </section>
+      </section>
+    </header>
+    
+    <div class="banner">
+    <section class="Ptypes">
+        <img src="./images  for project/jbl660nc-1.png" alt="product" style="border:2px solid white" height="120px" width="120px;"/>
+        <img src="./images  for project/jbl660nc-2.png" alt="product" style="border:2px solid gray" height="120px" width="120px;"/>
+        <img src="./images  for project/jbl660nc-3.png" alt="product" style="border:2px solid gray" height="120px" width="120px;"/>
+        <img src="./images  for project/jbl660nc-4.png" alt="product" style="border:2px solid gray" height="120px" width="120px;"/>
+
+    </section>
+    <section class="product">
+        <img src="./images  for project/jbl660nc-1.png" alt="product" height="700px" width="750px;">
+    </section>
+    <section class=" details">
+        <h2 class="jbl" style="color:rgb(142, 164, 195)">JBL Live 660NC</h2>
+        <p style="color:rgb(142, 164, 195)">Wirelesss Over-Ear NC Headphones</p>
+    
+    
+    <div class="star-rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span><p class="price" style="color:rgb(195, 183, 183);">| 1234 Ratings</p>
+       <hr>
+    <h4 class="price1" style="color:rgb(219, 217, 217)">₹9,999   <del style="color:dimgray">₹14,999</del></h4>
+    <p style="color:green">You save: ₹5,000(33%)</p>
+    <button class="button1"type="button"name="In Stock" style= color:white;background-color:green;>✔  In Stock</button>
+    <p  style="color:rgb(195, 183, 183);">(Inclusive of all taxes)</p>
+    <hr>
+
+   
+    <p style="color:rgb(142, 164, 195);font-size:23px;">Offers and Discounts</p>
+    <p class="p1">No Cost EMI on Credit Card</p>
+    <p class="p2">Pay Later & Avail Cashback</p>
+    
+   </div>
+   <hr>
+   <br>
+   
+
+   <button class="add" type="button" >Add to Cart</button>
+
+   </section>
+   <br>
+</div>
+<!-- ..........................................home2...................................................... -->
+ <section class="button">
+    <button class="add2" type="add" style="background-color: red; height:65px;" >Specifications</button>
+    <button class="add3" type="button" >Overview</button>
+    <button class="add3" type="button" >Reviews</button>
+    
+ </section>
+ <!-- .................................home3.................................... ........................-->
+  <section  class="pdetails">
+  <div class="home31" style="color:white">
+    <p style="font-size: 25px;">Brand</p>
+    <p style="font-size: 25px;">Model</p>
+    <p style="font-size: 25px;">Generic Name</p>
+    <p style="font-size: 25px;">Headphobe Type</p>
+    <p style="font-size: 25px;">Connectivity</p>
+    <p style="font-size: 25px;">Microphone</p>
+  </div>
+
+  <div class="home32" style="color:white;">
+    <h2>JBL</h2>
+    <h2>JBL Live 660NC</h2>
+    <h2>Headphones</h2>
+    <h2>Over Ear</h2>
+    <h2>Wireless</h2>
+    <h2>Yes</h2>
+  </div>
+
+
+</div>
+</section>
+<section>
+    <div>
+        <h1 style="color:rgb(197, 206, 213);text-align: center;">Related Products</h1>
+    </div>
+</section>
+<!-- ..............................................home4........................................................................ -->
+<section class="home4">
+    <div class="c1">
+        <div class="live-image">
+        <img src="./images  for project/jbl660nc-1.png"alt=headphones  width="150px" height="200px;"/>
+        </div>
+        <div class="details2">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h2>JBL Live 660 NC</h2>
+        <p>Wireless Over-Ear NC Headphones</p>
+       <hr class="hr1" style="color:dimgray">
+        <h4 style="color:rgb(219, 217, 217)">₹9,999  <del style="color:dimgray">₹14,999</del></h4>
+        <button type="button" class="add to cart">Add to Cart</button>
+        </div>
+    </div>
+    
+    
+    <div class="c2">
+        <div class="live-image">
+        <img src="./images  for project/boat518-1.png" alt="headphones"width="150px" height="200px;" />
+        </div>
+        <div class="details">
+        <span class="fa fa-star checked1"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h2>boAt Rockerz 518</h2>
+        <p>On-Ear Wireless Headphones</p>
+        <hr style="color:dimgray">
+        <h4 style="color:rgb(219, 217, 217)">₹9,999  <del style="color:dimgray">₹14,999</del></h4>
+        <button type="button" class="add to cart">Add to Cart</button>
+        </div>
+    </div>
+    
+    <div class="c3">
+        <div class="live-image">
+        <img src="./images  for project/boat410-1.png" alt="buds"width="150px" height="200px;" />
+        </div>
+        <div class="details">
+        <span class="fa fa-star checked2"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h2>boAt Airdopes</h2>
+        <p>Wireless In-Earbuds</p>
+        <hr style="color:dimgray">
+        <h4 style="color:rgb(219, 217, 217)">₹9,999  <del style="color:dimgray">₹14,999</del></h4>
+        <button type="button" class="add to cart">Add to Cart</button>
+    
+          
+        </div>
+    </div>
+    <div class="c4">  
+        <div class="live-image">
+        <img src="./images  for project/sonyXb910n-1.png" alt="earphones"width="150px" height="200px;"/>
+        </div>
+        <div class="details">
+        <span class="fa fa-star checked3"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h2>boAt BassHeads</h2>
+        <p>In-Ear wired Earphones</p>
+        <hr style="color:dimgray">
+        <h4 style="color:rgb(219, 217, 217)">₹9,999  <del style="color:dimgray">₹14,999</del></h4>
+        <button type="button" class="add to cart">Add to Cart</button>
+        </div>
+    
+    </div>  
+     </section>
+     <!-- .....................................home5........................................................................ -->
+     <section home="5">
+
+        <h2 style="align-content: center;text-align: center;">Our Advantages</h2>
+    <div class="adv">
+        <h3><i class='fas fa-shipping-fast' style='font-size:25px;color:red'></i>Express Delivery<p style="font-size: 15px;padding-left: 125px;">Ships in 24 Hours</p></h3>
+
+        <h3> <i class="fa-solid fa-shield-halved" style="font-size:20;color:red"></i>Brand Warranty<p style="font-size: 15px;padding-left: 125px;">100% original products</p></h3>
+        
+        <h3><i class="fa-solid fa-tags" style="font-size:20;color:red"></i>Exciting Deals<p style="font-size: 15px;padding-left: 125px;">On all prepaid orders</p></h3>
+        
+        <h3><i class="fa-solid fa-credit-card" style='font-size:20px;color:red'></i>Secure Payments <p style="font-size: 15px;padding-left: 125px;">SSL/Secure certificate</p> </h3>
+        
+    </div>
+    <!-- ................................footer................................................................................. -->
+
+
+
+     <footer class="footer">
+        <section>
+            <h1 style="color:rgb(201, 189, 189); font-size:25px;">Tech-Shop</h1>
+
+            <p style="color: dimgray;">Subscribe to our Email alerts to receive <br>early discount offers and new products info.</p>
+            <input type="email" name="text" placeholder="Email Address*">
+            <button type="button" class="subscribe">Subscribe</button>
+        </section>
+
+        <section class="section">
+           <dd> <h4 style="color:rgb(201, 187, 187);">Help</h4> </dd>
+
+        <ul type="none">
+
+            <li>FAQs</li>
+            <li>track Order</li>
+            <li>Cancel Order</li>
+            <li>Return Order</li>
+            <li>Warranty Info</li>
+
+        </ul>
+
+
+        </section>
+        <section>
+            <dd><h4 style="color:rgb(201, 187, 187);">Policies</h4></dd>
+            <ul type="none">
+
+            <li>Return Policy</li>
+            <li>Security</li>
+            <li>Sitemap</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+
+            </ul>
+
+        </section>
+        <section>
+            <dd><h4 style="color:rgb(201, 187, 187);">Company</h4></dd>
+            <ul type="none">
+
+                <li>About us</li>
+                <li>Contact us</li>
+                <li>Service Centres</li>
+                <li>Carees</li>
+                <li>Affiliates</li>
+                
+
+            </ul>
+        </section>
+    </footer>
+
+        <!-- .......................................................................................... -->
+
+        <hr style="color:dimgrey;">
+        
+           <div class="FSB">
+            <section>
+                <p style="color:dimgray">2024|All Rights Reserved.Build by<span style="color:white">|SUPRIYA KUKUNURU</span></p>
+            </section>
+            <section class="icons">
+                <i class="fa-brands fa-facebook-f" style="font-size: 20px; color:white;"></i>
+                <i class="fa-brands fa-twitter" style="font-size: 20px; color:white;"></i>
+                <i class="fa-brands fa-instagram" style="font-size: 20px; color:white;"></i>
+                <i class="fa-brands fa-linkedin-in" style="font-size: 20px; color:white;"></i>
+                
+                
+            </section>
+              
+        </div>
+
+      
+</body>
+</html>

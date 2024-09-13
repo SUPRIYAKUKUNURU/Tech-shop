@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
+     <style>
+        body{
+    background-color: black;
+}
+.header{
+    position: sticky;
+    top:0px;
+    padding-top:3px;
+}
+.sectionA{
+            display:flex;
+            /* margin-left:900px; */
+            /* margin-top:-60px; */
+            /* padding-right:10px; */
+            position: relative;
+            left: -170px;
+           
+           
+           
+          }
+          .icons{
+            left:350px;
+            position:relative;
+            bottom:-30px;
+        
+           }
+h3{
+    color:rgb(180, 195, 203);
+    font-size: 25px;
+}
+.sectionA{
+    display:flex;
+    margin-left:1100px;
+    margin-top:-60px;
+    padding:0px; 
+}
+
+i{
+    margin-right:50px;
+    margin-left:50px;
+   } 
+   /* ........................main.............................................. */
+    
+     
+
+     .cart-container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            padding-top: 97px;
+            padding-left: 70px;
+            position:relative;
+            bottom:90px;
+        }
+        .container10 {
+            
+            align-items: center;
+            display: flex;
+            
+            text-align: center;
+            margin-top: -20px;
+        }
+        button {
+            width: 32px;
+            height: 28px;
+            font-size: 21px;
+            color: honeydew;
+            background-color: rgb(45, 42, 42);
+            border: none;
+        }
+
+
+
+        #counting{
+            width: 32px;
+            height: 28px;
+            background-color: black; 
+            font-size: 20px;
+            color: red;
+            border-radius: none;
+
+        }
+        .cart-block1{
+            display: flex;
+        }
+        .cart-block-content, .cart-block-content1{
+            padding-left: 20px;
+        }
+        .delete-icon{
+            position: relative;
+            left: 278px;
+            bottom: 134px;
+        }
+        .cart-block2{
+            padding-top: 130px;
+            position: relative;
+            right: 376px;
+            display: flex;
+            
+        }
+       .cart-container1{
+        display: flex;
+        border-bottom: 2px solid #383030;
+    /* padding-bottom: 20px; */
+        margin-bottom: 20px;
+        margin-left: 20px;
+        width: 401px;
+       }
+      
+
+       .cart-products{
+        height: 450px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 500px;
+        /* scrollbar-color: #1c1a1a #1c1a1a;;
+        background-color: #1c1a1a; */
+        margin-bottom: 200px;
+        margin-left: 20px;
+        margin-top: 52px;
+       }
+       
+        .checkout{
+            margin-top:25px;
+            height: 50px;
+            width:380px;
+            background-color:red;
+            color:white;
+            font-size:25px;
+            display: block;
+            border-radius:5px;
+        
+            
+        }
+        .cart-p1{
+        color: white;
+        width: 270px;
+       }
+       .delete-icon{
+            position: relative;
+            left: 250px;
+            bottom: 130px;
+        }
+        
+        
+
+   .footer{
+    color:white;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    position:relative;
+    /* left:10px; */
+    bottom:500px;
+    left:30px;
+    /* height:800px; */
+
+}
+.footer h4{
+    font-size:25px;
+    margin-left :5px;
+}
+
+li{
+    font-size: 25px;
+    color:dimgrey
+}
+.home h4{
+    font-size: 25px;
+    margin-left:5px;
+}
+
+input{
+
+background-color: black;
+height: 45px;
+width:400px;
+font-size:25px;
+}
+
+
+ 
+.icons{
+    position: relative;
+    left: 301px;
+    padding-left: 650px;
+    bottom:30px;
+}
+
+   
+.jbl{
+    position: relative;
+    left: -101px;
+    
+    color: rgb(142, 164, 195);
+}
+.subscribe{
+    margin-top:25px;
+    height: 65px;
+    width:180px;
+    background-color:red;
+    color:white;
+    font-size:25px;
+    display: block;
+    border-radius:5px;
+}
+.FSB{
+    position:relative;
+    bottom:500px;
+}
+.name{
+    position:relative;
+    left:10px;
+    /* font-size:15px; */
+    bottom:-50px;
+}
+.spn1{
+            position: relative;
+            top: 30px;
+            right: 30px;
+            visibility: hidden;
+            color:dimgray;
+            font-size:15px;
+            border:2px solid dimgray;
+            border-radius: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:5px;
+        
+       }
+       #search:hover .spn1{
+            visibility: visible;
+       }
+       .spn2{
+            position: relative;
+            top: 30px;
+            right: 20px;
+            visibility: hidden;
+            color:dimgray;
+            font-size:15px;
+            border:2px solid dimgray;
+            border-radius: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:5px;
+        
+       }
+
+       #cart:hover .spn2{
+            visibility: visible;
+       }
+       .spn3{
+            /* border: 2px solid dimgray; */
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            position: relative;
+            top:35px;
+            right: 50px;
+            /* width: 200px;
+            height: 200px; */
+       }
+       .btn{
+            height:30px;
+            width:200px;
+            background-color: black;
+            color:dimgray;
+            border:2px solid dimgray;
+            border-radius: 2px;
+            font-size:15px;
+            text-align: left;
+
+       }
+       #profile{
+           visibility:hidden
+       }
+      #prf:hover .spn3{
+    visibility: visible;
+
+      }
+        #profile{
+            border: 2px solid dimgray;
+        }
+        
+        .tech:hover {
+            background-color:red;
+            width: 120px;
+        }  
+
+
+ </style>
+
+</head>
+<body>
+    
+    <header>
+        <section class="header1">
+      <section>
+          <h3 class="tech"style="color:rgb(186, 184, 199) padding-left=80px;">Tech-Shop</h3>
+      </section>
+     
+      <section class="sectionA">
+        <i class="fa fa-search" id="search" style="font-size:25px;color:white;" ><span class="spn1" >search</span></i>
+        <i class="fa fa-shopping-cart" id="cart"style="font-size:25px;color:white;"><span class="spn2">cart</span></i>
+      <i class="fa-solid fa-user"id="prf" style="color:white;font-size:20px;"><div id="profile"class="spn3">
+        <h2>Hello !</h2>
+        <h3 style="color:dimgray;font-size:10px;">Access account and manage orders</h3>
+        <a href="./Sign up.html" target="_blank"><button class="btn">Login/Signup </button></a>
+        <hr/>
+       <h3 style="color:dimgray;font-size:15px;">Please Login</h3>
+        <p></p>
+      </div>    
+      </i>
+    
+
+      </section>
+      </section>
+    </header>
+    <!-- .................................................Main page.......................................................................... -->
+  
+
+    <div class="cart-container">
+        <div class="cart-products"> 
+            <div class="cart-container1">
+            
+                <div class="cart-image">
+                    <img src="./images  for project/jbl660nc-1.png" width="100px" height="150px;">
+                </div>
+            
+                    
+                <div class="block-content4">
+                    <div class="cart-block-content">
+                        <p class="cart-p1">JBL Live 660NC Wireless Over-Ear NC Headphones</p>
+                       
+                     <b style="color:rgb(222, 209, 209);font-size: 23px;">₹1,299</b><del style="color:rgb(171, 148, 148);font: size 25px;">₹3,990</del>
+                        <div class="container10">            
+                           
+                                <button onclick="increment()">+</button>
+                                <p id="counting">1</p>
+                                <button onclick="decrement()">-</button>        
+                        </div>
+                        
+                        <div class="delete-icon">
+                            <i class="fa-regular fa-trash-can" aria-hidden="true" style="color: white; background-color: black;"></i>
+
+                        </div>
+                    
+                    </div>
+        
+                </div>
+            </div>
+            <div class="cart-container1">
+                <div class="cart-image">
+                    <img src="./images  for project/boat518-1.png" width="100px" height="150px;">
+                </div>
+                    
+                <div class="block-content4">
+                    <div class="cart-block-content">
+                        <p class="cart-p1">boAt Rockerz 518 On-Ear Wirless Headphones</p>
+                        <b style="color:rgb(222, 209, 209);font-size: 23px;">₹1,299</b><del style="color:rgb(171, 148, 148);font: size 25px;">₹3,990</del>
+                        <div class="container10">            
+                            
+                                <button onclick="increment()">+</button>
+                                <p id="counting">1</p>
+                                <button onclick="decrement()">-</button>        
+                            </div>
+                        
+                        <div class="delete-icon">
+                            <i class="fa-regular fa-trash-can" aria-hidden="true" style="color: white; background-color: black;"></i>
+
+                        </div>
+                    
+                    </div>
+        
+                </div>
+            </div>
+            <div class="cart-container1">
+                <div class="cart-image">
+                    <img src="./images  for project/boat131-1.png"width="100px" height="150px;" >
+                </div>
+                    
+                <div class="block-content4">
+                    <div class="cart-block-content">
+                        <p class="cart-p1">boAt Airpods 131 Wireless In-Ear Earbuds</p>
+                        <b style="color:rgb(222, 209, 209);font-size: 23px;">₹1,099</b><del style="color:rgb(171, 148, 148);font: size 25px;">₹2,999</del>
+                        <div class="container10">            
+                            
+                                <button onclick="increment()">+</button>
+                                <p id="counting">1</p>
+                                <button onclick="decrement()">-</button>        
+                            </div>
+                        
+                        <div class="delete-icon">
+                            <i class="fa-regular fa-trash-can" aria-hidden="true" style="color: white; background-color: black;"></i>
+
+                        </div>
+                    
+                    </div>
+        
+                </div>
+            </div>
+            <div class="cart-container1">
+                <div class="cart-image">
+                    <img src="./images  for project/boat110-1.png"width="100px" height="150px;">
+                </div>
+                    
+                <div class="block-content4">
+                    <div class="cart-block-content">
+                        <p class="cart-p1">boAt BassHeads 110 In-Ear Wired earphones</p>
+                        <b style="color:rgb(222, 209, 209);font-size: 23px;">₹499</b><del style="color:rgb(171, 148, 148);font: size 25px;">₹999</del>
+                        <div class="container10">            
+                            
+                                <button onclick="increment()">+</button>
+                                <p id="counting">1</p>
+                                <button onclick="decrement()">-</button>        
+                            </div>
+                        
+                        <div class="delete-icon">
+                            <i class="fa-regular fa-trash-can" aria-hidden="true" style="color: white; background-color: black;"></i>
+                        
+                        </div>
+                    
+                    </div>
+        
+                </div>
+            </div>
+      </div>
+      </div>
+   
+      <div class="p1" style="position: relative;bottom:-20px;">
+    <h3 style="position:relative;left:1100px;bottom:790px;">Order Summary (4 items)</h3>
+    <p style="position:relative;left:1100px;bottom:790px;color:white;">Original Price</p>
+    <p style="color:white ;position:relative;left:1100px;bottom:790px;color:white;">Discount</p>
+    <p style="color:white ;position:relative;left:1100px;bottom:790px;color:white;">Delivery</p>
+    <div class="prices" style="position:relative;text-align:right;bottom:900px;">
+    <h4 style="position:relative;color:white">₹22,978</h4>
+    <h4 style="color:green">-₹10,132</h4>
+    <h4 style="color:green">Free</h4>
+    <hr style="color:white;position:relative;left:1080px; width:450px; margin-left:10px;">
+    <div>
+    <h2 style="position:relative;right:290px;color:white">Total Price</h2>
+    <h2 style="position:relative;bottom:50px;text-align:right;color:white;">₹12,846</h2>
+    <button type="button" class="checkout"style="position: relative;left:1100px; bottom:50px;">Checkout</button>
+</div>
+    </div>
+</section>
+     
+      
+
+   
+<footer class="footer">
+    <section>
+        <h1 style="color:rgb(201, 189, 189);">Tech-Shop</h1>
+
+        <p style="color: dimgray;">Subscribe to our Email alerts to receive <br>early discount offers and new products info.</p>
+        <input type="email" name="text" placeholder="Email Address*">
+        <button type="button" class="subscribe">Subscribe</button>
+    </section>
+
+    <section class="section">
+       <dd> <h4 style="color:rgb(201, 187, 187);">Help</h4> </dd>
+
+    <ul type="none">
+
+        <li>FAQs</li>
+        <li>track Order</li>
+        <li>Cancel Order</li>
+        <li>Return Order</li>
+        <li>Warranty Info</li>
+
+    </ul>
+
+
+    </section>
+    <section>
+        <dd><h4 style="color:rgb(201, 187, 187);">Policies</h4></dd>
+        <ul type="none">
+
+        <li>Return Policy</li>
+        <li>Security</li>
+        <li>Sitemap</li>
+        <li>Privacy Policy</li>
+        <li>Terms & Conditions</li>
+
+        </ul>
+
+    </section>
+    <section>
+        <dd><h4 style="color:rgb(201, 187, 187);">Company</h4></dd>
+        <ul type="none">
+
+            <li>About us</li>
+            <li>Contact us</li>
+            <li>Service Centres</li>
+            <li>Carees</li>
+            <li>Affiliates</li>
+            
+
+        </ul>
+    </section>
+</footer>
+
+    <!-- .......................................................................................... -->
+
+    <hr style="color:dimgrey; position:relative;bottom:500px;">
+    
+       <div class="FSB">
+        <section>
+            <p style="color:dimgray">2024|All Rights Reserved.Build by<span style="color:white">|SUPRIYA KUKUNURU</span></p>
+        </section>
+        <section class="icons">
+            <i class="fa-brands fa-facebook-f" style="font-size: 20px; color:white;"></i>
+            <i class="fa-brands fa-twitter" style="font-size: 20px; color:white;"></i>
+            <i class="fa-brands fa-instagram" style="font-size: 20px; color:white;"></i>
+            <i class="fa-brands fa-linkedin-in" style="font-size: 20px; color:white;"></i>
+            
+            
+        </section>
+          
+    </div>
+
+
+
+
+</body>
+</html>

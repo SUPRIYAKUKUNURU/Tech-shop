@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body{
+            background-color: black;
+           
+        }
+        h3{
+            color:rgb(187, 184, 205);
+            font-size: 25px;
+        }
+        
+        
+        header{
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            background-color: black;
+            position: sticky;
+            top:0px;
+           
+          }
+
+          .sectionA{
+            display:flex;
+            margin-left:1100px;
+            margin-top:-60px;
+            padding:0px;
+            position: relative;
+            left: -150px;
+            
+           
+            
+         }
+         i{
+            /* width:10px; */
+            margin-right:50px;
+            margin-left:50px;
+           }
+       
+         input{
+            border:2px solid dimgray;
+            height: 25px;
+            width:250px;
+            background-color: rgb(47, 44, 44);
+            
+        }
+        .signup{ 
+            border:2px solid dimgray;
+     
+            background-color:rgb(49, 47, 47);
+            color:white;
+            width:280px;
+            padding-left:20px;
+            position:relative;
+            left:600px;
+            bottom:-100px;
+           
+        }
+        .su{
+            padding-left:5px;
+        }
+        button{
+            background-color:red;
+            height:45px;
+            width:260px;
+            padding-left: 8px;
+            color:white;
+            border-radius:4px ;
+
+        }
+        .divider {
+           display: flex;
+           align-items: center;
+           text-align: center;
+           
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #b5b5b5;
+            
+        }
+
+        .divider::before {
+            margin-right: 8px;
+        }
+
+        .divider::after {
+            margin-left: 10px;
+        }
+        .facebook{
+            background-color: cornflowerblue;
+            width:90px;
+            
+        }
+        .google{
+            background-color: brown;
+            width:90px;
+            
+        }
+        .twitter{
+            background-color:rgb(14, 173, 236);
+            width:90px;
+        }
+        .footer{
+            position:relative;
+            bottom:-200px;
+        }
+        .footer{
+            color:white;
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .footer h4{
+            font-size:25px;
+            margin-left :5px;
+        }
+        li{
+            font-size: 25px;
+            color:dimgrey
+        }
+        .home h4{
+            font-size: 25px;
+            margin-left:5px;
+        }
+        .subscribe{
+            margin-top:25px;
+            height: 65px;
+            width:180px;
+            background-color:red;
+            color:white;
+            font-size:25px;
+            display: block;
+            border-radius:5px;
+        
+            
+        }
+
+         .FSB{
+        
+            display:grid;
+            grid-template-columns: repeat(2,1fr); 
+            padding:10px;
+            position:relative;
+            bottom:-200px;
+            font-size:25px;
+        
+        }
+        i{
+            /* width:10px; */
+            margin-right:50px;
+            margin-left:50px;
+           }
+           .icons{
+            padding-left: 250px;;
+            
+           }
+           .tech:hover {
+            background-color:red;
+            width: 120px;
+        }  
+
+        .spn1{
+            position: relative;
+            top: 30px;
+            right: 20px;
+            visibility: hidden;
+            color:dimgray;
+            font-size:15px;
+            border:2px solid dimgray;
+            border-radius: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:5px;
+        
+       }
+       #search:hover .spn1{
+            visibility: visible;
+       }
+       .spn2{
+            position: relative;
+            top: 30px;
+            right: 20px;
+            visibility: hidden;
+            color:dimgray;
+            font-size:15px;
+            border:2px solid dimgray;
+            border-radius: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:5px;
+        
+       }
+
+       #cart:hover .spn2{
+            visibility: visible;
+       }
+       .spn3{
+            /* border: 2px solid dimgray; */
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            position: relative;
+            top:35px;
+            right: 80px;
+            /* width: 200px;
+            height: 200px; */
+       }
+       .btn{
+            height:30px;
+            width:200px;
+            background-color: black;
+            color:dimgray;
+            border:2px solid dimgray;
+            border-radius: 2px;
+            font-size:15px;
+            text-align: left;
+
+       }
+       #profile{
+           visibility:hidden
+       }
+      #prf:hover .spn3{
+    visibility: visible;
+
+      }
+        #profile{
+            border: 2px solid dimgray;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+        <section class="header1">
+      <section>
+          <h3  class="tech"style="color:rgb(186, 184, 199) padding-left=80px;">Tech-Shop</h3>
+      </section>
+     
+      <section class="sectionA">
+        <i class="fa fa-search" id="search" style="font-size:25px;color:white;" ><span class="spn1" >search</span></i>
+        <i class="fa fa-shopping-cart" id="cart"style="font-size:25px;color:white;"><span class="spn2">cart</span></i>
+      <i class="fa-solid fa-user"id="prf" style="color:white;font-size:20px;"><div id="profile"class="spn3">
+        <h2>Hello !</h2>
+        <h3 style="color:dimgray;font-size:10px;">Access account and manage orders</h3>
+        <a href="./Sign up.html" target="_blank"><button class="btn">Login/Signup </button></a>
+        <hr/>
+       <h3 style="color:dimgray;font-size:15px;">Please Login</h3>
+        <p></p>
+      </div>    
+      </i>
+    
+
+      </section>
+      </section>
+    </header>
+    <!-- <header>
+        <section class="header1">
+      <section>
+          <h3 class="tech"style="color:rgb(186, 184, 199) padding-left=80px;">Tech-Shop</h3>
+      </section>
+     
+      <section class="sectionA">
+        <i class="fa fa-search" style="font-size:25px;color:white;"></i>
+        <i class="fa fa-shopping-cart" style="font-size:25px;color:white;"></i>
+        <i class="fa fa-user" style="font-size:25px;color:white;"></i>
+
+      </section>
+      </section>
+    </header> -->
+    <div class="signup">
+ <form>
+    
+
+   <div class="su">
+        <h3>Signup</h3>
+        <p>Already have an account ? Login</p>
+    
+    </div>
+
+    <input type="username" name="username" placeholder="Username"/><br><br>
+    <input type="Email" name="email" placeholder="Email"/><br><br>
+    <input type="password" name="password" placeholder="Password"/><br><br>
+    <input type="Password" name="password" placeholder="Confirm Password"/><br><br>
+
+    <button class="sign" type="button" class="signup">Signup</button>
+    <p class="divider">or Login with</p>
+    <button class="facebook" type="button" class="facebook">Facebook</button>
+    <button class="google" type="button" class="Google">Google</button>
+    <button class="twitter" type="button" class="Twitter">Twitter</button>
+  
+    </div>
+</form>
+
+<!-- ...........................................footer................................................................................................ -->
+   <footer class="footer">
+<section>
+    <h1 style="color:rgb(201, 189, 189);">Tech-Shop</h1>
+
+    <p style="color: dimgray;">Subscribe to our Email alerts to receive <br>early discount offers and new products info.</p>
+    <input type="email" name="text" placeholder="Email Address*">
+    <button type="button" class="subscribe">Subscribe</button>
+</section>
+
+<section class="section">
+    <dd> <h4 style="color:rgb(201, 187, 187);">Help</h4> </dd>
+
+ <ul type="none">
+
+     <li>FAQs</li>
+     <li>track Order</li>
+     <li>Cancel Order</li>
+     <li>Return Order</li>
+     <li>Warranty Info</li>
+
+ </ul>
+
+
+ </section>
+ <section>
+     <dd><h4 style="color:rgb(201, 187, 187);">Policies</h4></dd>
+     <ul type="none">
+
+     <li>Return Policy</li>
+     <li>Security</li>
+     <li>Sitemap</li>
+     <li>Privacy Policy</li>
+     <li>Terms & Conditions</li>
+
+     </ul>
+
+ </section>
+ <section>
+     <dd><h4 style="color:rgb(201, 187, 187);">Company</h4></dd>
+     <ul type="none">
+
+         <li>About us</li>
+         <li>Contact us</li>
+         <li>Service Centres</li>
+         <li>Carees</li>
+         <li>Affiliates</li>
+         
+
+     </ul>
+ </section>
+</footer>
+<hr style="color:dimgrey;position:relative;bottom:-200px;">
+        
+           <div class="FSB">
+            <section>
+                <p style="color:dimgray">2024|All Rights Reserved.Build by<span style="color:white">|SUPRIYA KUKUNURU</span></p>
+            </section>
+            <section class="icons">
+                <i class="fa-brands fa-facebook-f" style="font-size: 20px; color:white;"></i>
+                <i class="fa-brands fa-twitter" style="font-size: 20px; color:white;"></i>
+                <i class="fa-brands fa-instagram" style="font-size: 20px; color:white;"></i>
+                <i class="fa-brands fa-linkedin-in" style="font-size: 20px; color:white;"></i>
+                
+                
+            </section>
+              
+        </div>
+
+
+
+</body>
+</html>

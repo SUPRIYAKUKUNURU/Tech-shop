@@ -1,0 +1,87 @@
+body{
+    background-color: black;
+}
+.header{
+    position: sticky;
+    top:0px;
+    padding-top:3px;
+}
+h3{
+    color:rgb(180, 195, 203);
+    font-size: 25px;
+}
+.sectionA{
+    display:flex;
+    margin-left:1100px;
+    margin-top:-60px;
+    padding:0px; 
+}
+
+i{
+    margin-right:50px;
+    margin-left:50px;
+   } 
+   /* ........................main.............................................. */
+    .img1{
+        height:300px;
+        width:300px;
+    }
+    .img2{
+        height: 300px;
+        width:300px;
+    }
+
+   .footer{
+    color:white;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.footer h4{
+    font-size:25px;
+    margin-left :5px;
+}
+li{
+    font-size: 25px;
+    color:dimgrey
+}
+.home h4{
+    font-size: 25px;
+    margin-left:5px;
+}
+
+input{
+
+background-color: black;
+height: 45px;
+width:400px;
+font-size:25px;
+}
+
+
+ .FSB{
+
+    display:grid;
+    grid-template-columns: repeat(2,1fr); 
+    padding:10px;
+
+}
+.icons{
+    position: relative;
+    left: 301px;
+}
+.jbl{
+    position: relative;
+    left: -101px;
+    
+    color: rgb(142, 164, 195);
+}
+.subscribe{
+    margin-top:25px;
+    height: 65px;
+    width:180px;
+    background-color:red;
+    color:white;
+    font-size:25px;
+    display: block;
+    border-radius:5px;
+}
